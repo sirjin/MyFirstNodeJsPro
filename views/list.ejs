@@ -1,9 +1,21 @@
 <%= listitem %>
 <h1>呵呵，这里都是数据库数据</h1>
-<ul>
+<!--<ul>
     <% for (var i = 0; i<listitem.length; i++) {%>
         <li><%= listitem[i]._id %></li>
         <li><%= listitem[i].name %></li>
         <li><%= listitem[i].tone %></li>
     <% } %>
-</ul>
+</ul>-->
+
+<% if (listitem.length) {%>
+    <ul>
+        <% listitem.forEach(function (name) { %>
+            <li ><%= name._id%></li>
+            <li ><%= name.name%></li>
+            <li ><%= name.tone%></li>
+        <% }) %>
+    </ul>
+<% } else {%>
+    <label>无数据</label>
+<% }%>
