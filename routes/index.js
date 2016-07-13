@@ -1,4 +1,5 @@
 var express = require('express');
+var http = require('http');
 var router = express.Router();
 var crypto = require('crypto');
 var User = require('./users');
