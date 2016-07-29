@@ -4,5 +4,6 @@
 module.exports = {
     cookieSecret: 'userTest',
     db: 'test_db',
-    host: 'localhost'
+    host: 'localhost',
+    port: 27017
 };
