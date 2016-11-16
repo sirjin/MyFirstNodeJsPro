@@ -18,6 +18,7 @@
     "mongoose": "*",
     "mongodb": "*",
     "log4js":"*",
-    "typescript":"*"
+    "typescript":"*",
+    "mysql":"*"
   }
 }
