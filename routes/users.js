@@ -1,4 +1,18 @@
 var mongodb = require('./db');
+/*var mysql = require('mysql');
+
+var pool = mysql.createPool({
+  connectionLimit : 30,
+  host            : 'localhost',
+  user            : 'root',
+  password        : xxxx
+});
+
+pool.query('SELECT * FROM zd.alga_cs;', function(err, rows, fields) {
+  if (err) throw err;
+  console.log('The solution is: ', rows);
+});*/
+
 function User(user) {
   this.name = user.name;
   this.password = user.password;
